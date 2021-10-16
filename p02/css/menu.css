@@ -1,60 +1,93 @@
 body {
-    --main-color : #4fb358 ;
+	--main-color: #4fb358;
+    --light-color: #f8fae9;
+    --dark-color: #081c15; 
 }
 
-body>header>nav {
-    z-index: 6;
-    position: absolute;
-    top: 80px;
+body>header {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	background-color: var(--main-color);
+	text-align: center;
+}
+
+
+nav {
+	position: fixed;
+	top: 80px;
+	margin: 0;
+    text-align: center;
     width: 100%;
-    height: 55px;
     background-color: var(--main-color);
 }
 
-body>header>nav ul {
-    list-style-type: none;
-    display: table;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
+nav ul{
+	list-style:none;
+	margin:0;
+	padding:0;
 }
 
-body>header>nav>ul>li {
-    float: left;
-}
-
-body>header>nav>ul>li>a {
-    display: block;
-    color: #f8fae9;
-    text-align: center;
-    padding: 15px 64px;
-    text-decoration: none;
-}
-
-body>header>nav>ul>li>a:hover {
-    background-color: #081c15;
+nav>ul>li {
     border-radius: 10px;
 }
 
-body>header>nav>ul ul a:hover {
-    background-color: #081c15;
-    border-radius: 0;
-}
-
-#offres {
-    border-radius: 10px 10px 0 0;
-}
-
-body>header>nav>ul li ul a {
-    background-color: var(--main-color);
+nav a{
     display: block;
-    color: #f8fae9;
-    text-align: center;
-    padding:15px 53px;
-    text-decoration: none;
+	color: var(--light-color);
+	text-decoration:none;
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+}
+
+
+nav ul li:hover{
+	color:white;
+	text-decoration:none;
+    background-color: var(--dark-color);
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav>ul>li{
+    height: 55px;
+    width: 15%;
+    background-color: var(--main-color);
+}
+
+nav>ul>li>ul{
     display: none;
 }
 
-body>header>nav>ul li:hover ul a {
+nav>ul>li:hover>ul{
     display: block;
+    flex-direction: row;
+}
+
+nav>ul ul>li {
+    height: 55px;
+    width: 100%;
+    background-color: var(--main-color);
+
+}
+
+#inpage{
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px var(--light-color);
+}
+
+.deroulant {
+    border-radius: 10px 10px 0 0;
+}
+
+.last-item {
+    border-radius: 0 0 10px 10px;
 }
