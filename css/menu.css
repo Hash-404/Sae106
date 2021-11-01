@@ -1,0 +1,95 @@
+body {
+	--main-color: #4fb358;
+    --light-color: #f8fae9;
+    --dark-color: #081c15; 
+}
+
+body>header {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	background-color: var(--main-color);
+	text-align: center;
+}
+
+
+nav {
+	position: fixed;
+	top: 80px;
+	margin: 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+nav ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+nav>ul>li {
+    border-radius: 10px;
+}
+
+nav a{
+    display: block;
+	color: var(--light-color);
+	text-decoration:none;
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+}
+
+
+nav ul li:hover{
+	color:white;
+	text-decoration:none;
+    background-color: var(--dark-color);
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav>ul>li{
+    height: 55px;
+    width: 15%;
+    background-color: var(--main-color);
+}
+
+nav>ul>li>ul{
+    display: none;
+}
+
+nav>ul>li:hover>ul{
+    display: block;
+    flex-direction: row;
+}
+
+nav>ul ul>li {
+    height: 55px;
+    width: 100%;
+    background-color: var(--main-color);
+
+}
+
+#inpage{
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px var(--light-color);
+    cursor: pointer;
+}
+
+.deroulant {
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.last-item {
+    border-radius: 0 0 10px 10px;
+}
