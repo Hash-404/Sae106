@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     --main-color : #4fb358 ;
@@ -8,11 +12,17 @@ body {
 }
 
 body>header {
-    height: 135px;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	height: 75px;
+	margin: 0;
+	background-color: var(--main-color);
+	text-align: center;
 }
 
 body>header>a>img {
-    height: 70px;
+    height: 65px;
     padding-top: 5px;
 }
 
@@ -22,6 +32,7 @@ body>header>a>img {
     width: auto;
     background-image: url('../img/main-wallpaper.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100%;
 }
 
@@ -53,19 +64,19 @@ h1 {
 
 body>footer {
     bottom: 0px;
-    height: 30px;
     right: 0;
     left: 0;
+    padding: 5px;
     background-color: var(--main-color);
     text-align: center;
-    padding-top: 15px;
     color: var(--light-color);
 }
 
-.line {
+hr {
     border: none;
     background-color: var(--light-color);
     height: 3px;
+    margin-top: 25px;
     margin-bottom: 0;
     float: left;
     width: 35%;
@@ -92,6 +103,7 @@ body>footer {
     justify-content: space-around;
     padding: 0;
     margin: 0;
+    margin-top: 100px;
     list-style: none;
 }
 
