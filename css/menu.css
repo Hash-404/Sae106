@@ -77,6 +77,10 @@ nav>ul ul>li {
     border-radius: 10px 10px 0 0;
 }
 
-.last-item {
+.last-item{
+    border-radius: 0 0 10px 10px;
+}
+
+.last-item:hover{
     border-radius: 0 0 10px 10px;
 }
