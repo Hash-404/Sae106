@@ -165,7 +165,7 @@ section p {
     margin: 5px;
 }
 
-#valeurs>div>div {
+#valeurs>section>section {
     background: var(--light-color);
     color: var(--dark-color);
     font-size: 20px;
