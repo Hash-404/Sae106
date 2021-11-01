@@ -26,7 +26,7 @@ body>header>a>img {
     padding-top: 5px;
 }
 
-#slogan-bg {
+#slogan {
     top: 150px;
     margin-top: 10px;
     height: 100vh;
@@ -37,10 +37,10 @@ body>header>a>img {
     background-size: cover;
 }
 
-.slogan {
+#slogan>h1 {
     cursor: default;
     font-style: italic;
-    font-weight:300;
+    font-weight: 200;
     z-index: 5;
     margin: 0 75px;
     padding: 200px 50px;
@@ -76,7 +76,7 @@ body>footer {
 hr {
     border: none;
     background-color: var(--light-color);
-    height: 3px;
+    height: 2px;
     margin-top: 25px;
     margin-bottom: 0;
     float: left;
