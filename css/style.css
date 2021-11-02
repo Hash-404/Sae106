@@ -175,19 +175,29 @@ h1 {
     min-width: 200px;
     width: 18%;
     height: 200px;
-    margin-top: 30px;
+    margin-top: 50px;
     border-radius: 10px;
 }
 
 #avis {
     background-color: var(--light-color);
     padding: 50px 0;
+}
+
+#avis>h1 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--dark-color);
+    margin-bottom: 50px;
+}
+
+#avis>section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#avis>img {
+#avis img {
     margin: 20px;
     max-height: 250px;
     height: auto;
