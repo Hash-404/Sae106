@@ -100,7 +100,8 @@ hr {
 
 .grid-display {
     padding: 100px;
-    height: 700px;
+    min-height: 700px;
+    height: auto;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr;
@@ -144,7 +145,8 @@ section p {
 
 #valeurs {
     padding: 100px 50px;
-    height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
+    height: auto;
     width: calc(100% - 100px);
     background-image: url('../img/landscape1.jpg');
     background-repeat: no-repeat;
@@ -170,6 +172,7 @@ section p {
     color: var(--dark-color);
     font-size: 20px;
     padding: 20px;
+    min-width: 200px;
     width: 18%;
     height: 200px;
     margin-top: 30px;
