@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/menu.css" rel="stylesheet">
+    <link href="../css/formulaire.css" rel="stylesheet">
     <link href="../img/logo_final_sans_fond.png" rel="icon" type="image/png" sizes="16x16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,13 +36,13 @@
                     <a href="./nos-partenaires.html">Nos partenaires</a>
                 </li>
                 <li class="deroulant">
-                    <a href="#">Notre entreprise</a>
+                    <a id="inpage" href="#">Notre entreprise</a>
                     <ul>
                         <li>
                             <a href="./a-propos.html">À propos</a>
                         </li>
                         <li class="last-item">
-                            <a id="inpage" href="#">Nous contacter</a>
+                            <a href="#">Nous contacter</a>
                         </li>
                     </ul>
                 </li>
@@ -49,7 +50,23 @@
         </nav>
     </header>
     <main>
-
+        <section>  
+            <form action="" method="post">
+              <h3>Nous contacter</h3>
+              <h4>Contactez-nous et recevez une réponse dans les 48 heures !</h4>
+                <input placeholder="Votre nom" type="text" tabindex="1" required>
+                <select name="raison" required>
+                    <option value="">-- Sélectionnez une raison --</option>
+                    <option value="suggestion">Suggestion</option>
+                    <option value="support">Besoin d'aide</option>
+                    <option value="other">Autre...</option>
+                </select>
+                <input placeholder="Votre adresse email" type="email" tabindex="2" required>
+                <input placeholder="Votre numéro de téléphone" type="tel" tabindex="3">
+                <textarea placeholder="Tapez votre message ici..." tabindex="5" required></textarea>
+                <button name="envoyer" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+            </form>
+        </section>
     </main>
     <footer>
         <p>LANDOU Sylvain © FRANÇOIS Antonin</p>
