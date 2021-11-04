@@ -84,6 +84,15 @@ section {
     color: var(--light-color);
 }
 
+#subtitle {
+    margin-top: 50px;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 125px;
+    color: var(--light-color);
+}
+
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -216,4 +225,17 @@ h1 {
     width: auto;
     border: var(--dark-color) solid 1px;
     border-radius: 10px;
+}
+
+main>section>ul>li>section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+
+main>section>ul>li>section>img{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: var(--dark-color) solid 2px;
+    width: 120px;
 }
