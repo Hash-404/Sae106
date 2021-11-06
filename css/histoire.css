@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+	--main-color: #4fb358;
+    --light-color: #f8fae9;
+    --dark-color: #081c15; 
+}
+
+body {
+    background-color: var(--light-color);
+}
+
+main h2 {
+    padding-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+main img {
+    width: 80%;
+    margin: 20px 10% 70px;
+}
+
+main p {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 10px;
+    font-size: 30px;
+    max-width: 80%;
+    width: auto;
+    padding: 15px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#quisommesnous {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/data-center.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#quisommesnous>h1 {
+    padding-top: 250px;
+    font-size: 80px;
+    text-align: center;
+    color: var(--light-color);
+}
+
+#quisommesnous>hr {
+    margin: 10px 32%;
+    width: 36%;
+}
+
+#badges {
+    background-color: var(--dark-color);
+}
+
+#badges>h2 {
+    color: var(--light-color);
+}
+
+#badges>section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#badges>section>img {
+    margin: 50px 70px 90px;
+    max-height: 400px;
+    height: auto;
+    max-width: 35%;
+    width: auto;
+    border: solid var(--light-color) 1px;
+    border-radius: 20px;
+}
+
+#engagements {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/faitfroid.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#engagements>h1 {
+    padding-top: 100px;
+    font-size: 80px;
+    text-align: center;
+    color: var(--light-color);
+}
+
+#engagements>hr {
+    margin: 10px 32%;
+    width: 36%;
+}
+
+#engagements section {
+    margin-top: 100px;
+}
