@@ -9,6 +9,9 @@
 
 body {
     background-color: var(--dark-color);
+}
+
+body>main {
     min-height: 100vh;
 }
 
@@ -71,16 +74,16 @@ h3 {
     color:var(--main-color);
 }
 
-#title {
+h4 {
     margin-top: 150px;
     font-size: 80px;
     margin-left: 125px;
     color: var(--light-color);
 }
 
-#subtitle {
+h5 {
     margin-top: 50px;
-    font-size: 60px;
+    font-size: 40px;
     font-style: italic;
     font-weight: 300;
     margin-left: 125px;

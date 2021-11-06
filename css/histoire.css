@@ -19,12 +19,17 @@ main h2 {
     color: var(--dark-color);
 }
 
+main hr {
+    margin: 10px 32%;
+    width: 36%;
+}
+
 main img {
     width: 80%;
     margin: 20px 10% 70px;
 }
 
-main p {
+main>section>section>p {
     background-color: var(--light-color);
     color: var(--dark-color);
     border-radius: 10px;
@@ -82,7 +87,7 @@ main p {
 }
 
 #engagements {
-    height: 100vh;
+    min-height: 800px;
     width: 100%;
     background-image: url('../img/faitfroid.jpg');
     background-repeat: no-repeat;
@@ -97,11 +102,10 @@ main p {
     color: var(--light-color);
 }
 
-#engagements>hr {
-    margin: 10px 32%;
-    width: 36%;
-}
-
 #engagements section {
     margin-top: 100px;
+}
+
+#engagements + section {
+    padding: 0 100px;
 }
